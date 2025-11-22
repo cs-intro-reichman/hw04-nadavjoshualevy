@@ -1,6 +1,7 @@
 public class Primes {
     public static void main(String[] args) {
-        Boolean[] prime = new Boolean[31];
+        int n = Integer.parseInt(args[0]);
+        Boolean[] prime = new Boolean[n+1];
         for (int i = 0; prime.length>i; i++){
             prime[i] = true;
         }
@@ -15,14 +16,15 @@ public class Primes {
          
         }
        int count = 0;
-        System.out.println("Prime numbers up to 30:");
+        System.out.println("Prime numbers up to " + n + ":");
         for (int i = 0; i < prime.length; i++) {
             if (prime[i]) { 
                 count++; 
                 System.out.println(i); 
             }  
+         
         }
-        System.out.println("There are " + count + " primes between 2 and 30 (33% are primes)");
+        System.out.println("There are " + count + " primes between 2 and " + n + " (" +  (count * 100) / n + "% are primes)") ;
     }
 
  

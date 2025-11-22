@@ -167,9 +167,10 @@ public class ArrCharOps {
     if (sum1 == sum2){return 0;}
     if (sum1>sum2) {return 1;}
     if (sum1<sum2) {return -1;}
-    else return -2;
-        
+    if (str1 == null || str2 == null || str1.equals("") || str2.equals("")) {
+        return -2;
+    }
     
-
+        return 0;
     }
 }

@@ -37,6 +37,7 @@ public class MyString {
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
     Boolean isSub = false;
+    if (str2.length() == 0) { return true; }
     if (str2.length() > str1.length()) { return false;} 
     else {
         for (int i = 0; str1.length()>i;i++){
